@@ -5,7 +5,7 @@ const App = () => {
   const [data,setData] = useState([])
 
   useEffect(()=>
-    axios.post('https://reqres.in/api/users',{
+    axios.put('https://reqres.in/api/users/2',{
       "name": "imran",
       "job": "fullstack developer"
     })
@@ -14,7 +14,7 @@ const App = () => {
   )
   return (
     <div>
-      <h1>please check your console for post api response</h1>
+      <h1>please check your console for put api response</h1>
       
     </div>
   )
