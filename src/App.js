@@ -5,16 +5,13 @@ const App = () => {
   const [data,setData] = useState([])
 
   useEffect(()=>
-    axios.put('https://reqres.in/api/users/2',{
-      "name": "imran",
-      "job": "fullstack developer"
-    })
+    axios.delete('https://reqres.in/api/users/2')
     .then(res=>console.log(res.data))
     .catch(err=>console.log(err)),[]
   )
   return (
     <div>
-      <h1>please check your console for put api response</h1>
+      <h1>please check your console for delete api response</h1>
       
     </div>
   )
